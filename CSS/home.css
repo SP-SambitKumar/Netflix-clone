@@ -14,8 +14,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 1;
-    flex-wrap: wrap;
 }
 
 .logo {
@@ -23,14 +21,25 @@ nav {
     font-weight: bold;
 }
 
-.nav-links a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 15px;
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #e50914; /* Change the text color on hover */
+}
+
+
+
 .banner {
-    background: url(/Image/bg.jpgvs) center center / cover no-repeat;
+    background: url(/Image/bg.jpg) center center / cover no-repeat;
     text-align: center;
     padding: 100px 20px;
 }
@@ -72,14 +81,84 @@ footer {
     padding: 10px;
     text-align: center;
 }
-.categories, ul, li, a{
+
+.categories, ul, li, a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     text-decoration: none;
     color: #fff;
 }
-.series-row{
+
+.series-row {
     display: flex;
     overflow-x: auto;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+    .banner h1 {
+        font-size: 40px;
+    }
+    
+    .banner {
+        padding: 80px 20px;
+    }
+
+    .banner button {
+        font-size: 16px;
+        padding: 8px 18px;
+    }
+
+    .movie-item img {
+        width: 120px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner h1 {
+        font-size: 35px;
+    }
+
+    .banner {
+        padding: 60px 20px;
+    }
+
+    .movie-item img {
+        width: 100px;
+        height: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner h1 {
+        font-size: 28px;
+    }
+
+    .banner {
+        padding: 40px 20px;
+    }
+
+    .banner button {
+        font-size: 14px;
+        padding: 6px 16px;
+    }
+
+    .movie-item img {
+        width: 80px;
+        height: 120px;
+    }
 }
