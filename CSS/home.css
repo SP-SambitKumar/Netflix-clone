@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #000;
+}
+
+header {
+    background: #111;
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.banner {
+    background: url(/Image/bg.jpgvs) center center / cover no-repeat;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.banner h1 {
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner button {
+    background: #e50914;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#movies {
+    padding: 20px;
+}
+
+.movie-row {
+    display: flex;
+    overflow-x: auto;
+}
+
+.movie-item {
+    margin-right: 15px;
+}
+
+.movie-item img {
+    width: 150px;
+    height: 200px;
+}
+
+footer {
+    background: #111;
+    padding: 10px;
+    text-align: center;
+}
+.categories, ul, li, a{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.series-row{
+    display: flex;
+    overflow-x: auto;
+}
