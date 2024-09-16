@@ -139,57 +139,47 @@
         <h1>Feedback</h1>
         <form action="https://api.web3forms.com/submit" method="POST">
             <!-- Replace with your Access Key -->
-    <input type="hidden" name="access_key" value="8a53e907-d00a-47b6-b0f9-ac009f86c7e6">
-    <table>
-        <tr>
-            <td>
-                <label for="name" >Name:</label>
-            </td>
-            <td>
-                <input type="text" name="" id="" required>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label for="email">E-mail:</label>
-            </td>
-            <td>
-                <input type="text" name="" id="" required>
-            </td>
-        </tr>
-        <tr>
-            <td><b>Rate this site:</b></td>
-            <td><label for="worse"><input type="radio" name="Rate this site" id="worse">Worse</label></td>
-            <td><label for="bad"><input type="radio" name="Rate this site" id="bad">Bad</label></td>
-            <td><label for="good"><input type="radio" name="Rate this site" id="good">Good</label></td>
-            <td><label for="better"><input type="radio" name="Rate this site" id="better">Better</label></td>
-            <td><label for="Best"><input type="radio" name="Rate this site" id="best">Best</label></td>
-        </tr>
-        <tr>
-            <td><label for="Address">Share your experience</label></td>
-            <td><textarea name="textarea" id="Address" required></textarea></td>
-        </tr>
-        </table>
+            <input type="hidden" name="access_key" value="8a53e907-d00a-47b6-b0f9-ac009f86c7e6">
+        
+            <!-- Form Inputs. Each input must have a name="" attribute -->
+            <label for="name">Name:</label>
+            <input type="text" name="name" required><br>
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" required><br>
+            <label for="Rate">Rate this site:</label>
+            <label for="worse"><input type="radio" name="Rate this site" id="worse">Worse</label>
+            <label for="bad"><input type="radio" name="Rate this site" id="bad">Bad</label>
+            <label for="good"><input type="radio" name="Rate this site" id="good">Good</label>
+            <label for="better"><input type="radio" name="Rate this site" id="better">Better</label>
+            <label for="Best"><input type="radio" name="Rate this site" id="best">Best</label><br>
+            <label for="message">Feedback box:</label>
+            <textarea name="message" required></textarea><br>
+        
+            <!-- Honeypot Spam Protection -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;"><br>
+        
+            <!-- Custom Confirmation / Success Page -->
+            <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html">
+        
+            <button type="submit">Submit</button>
     </form>
-        <a href="./index.html">
+        <!-- <a href="./index.html">
         <input type="submit" value="Submit"></a>
-        </div>
-
-        <a href="./index.html"><button class="sticky">*</button></a>
+        </div> -->
     <div class="separation"></div>
     <footer>
         <div class="questions">
             Questions? Call 000-800-919-1694
         </div>
         <div class="footer">
-            <div class="footer-item"> 
+            <div class="footer-item">
                 <a href="faq">Investor Relations</a>
                 <a href="faq">Jobs</a>
                 <a href="faq">Ways to Watch</a>
                 <a href="faq">Terms of Use</a>
             </div>
 
-            <div class="footer-item"> 
+            <div class="footer-item">
                 <a href="faq">Help Centre</a>
                 <a href="faq">Account</a>
                 <a href="faq">Speed Test</a>
@@ -198,14 +188,14 @@
             <div class="footer-item">
                 <a href="faq">Media Centre</a>
                 <a href="faq">Privacy</a>
-                <a href="faq">Cookie Preferences</a> 
+                <a href="faq">Cookie Preferences</a>
                 <a href="faq">Corporate</a>
             </div>
 
             <div class="footer-item">
                 <a href="faq">Contact Us</a>
-                <a href="faq">Speed Test</a> 
-                <a href="faq">Legal Notices</a> 
+                <a href="faq">Speed Test</a>
+                <a href="faq">Legal Notices</a>
                 <a href="faq">Only on Netflix</a>
             </div>
         </div>
