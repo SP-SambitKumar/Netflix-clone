@@ -6,12 +6,18 @@
     <title>Simple Netflix Clone</title>
     <link rel="stylesheet" href="../CSS/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="../Image/Netflix-symbol-removebg-preview.png" type="image/x-icon">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo"><img src="/Image/Netflix-symbol-removebg-preview.png" alt="" width="70px"; height="40px;"></div>
-            <div class="nav-links">
+            <div class="logo">
+                <img src="/Image/Netflix-symbol-removebg-preview.png" alt="Netflix Logo" width="70px" height="40px">
+            </div>
+            <!-- Toggle Button for Mobile -->
+            <span class="toggle-btn" onclick="toggleMenu()">☰</span>
+            <!-- Navigation Links -->
+            <div class="nav-menu">
                 <a href="#">Home</a>
                 <a href="#">Trending</a>
                 <a href="#">My List</a>
@@ -41,64 +47,60 @@
                     <img src="/Image/Jawan_film_poster.jpg" alt="Movie 1">
                     <p>Jawan</p>
                 </div>
+
                 <div class="movie-item">
                     <img src="/Image/Jailer_2023_Tamil_film_poster.jpg" alt="Movie 2">
                     <p>Jailer</p>
                 </div>
+
                 <div class="movie-item">
-                    <img src="/Image/Kalki_2898_AD.jpg" alt="Movie 3">
+                    <img src="/Image/Ala_Vaikunthapurramuloo.jpeg" alt="Movie 2">
+                    <p style="text-align: center;">Ala Vaikunthapuramloo</p>
+                </div>
+
+                <div class="movie-item">
+                    <img src="/Image/Ismart_Shankar_poster.jpg" alt="Movie 2">
+                    <p>Ismart Shankar</p>
+                </div>
+
+                <div class="movie-item">
+                    <img src="/Image/Kalki_2898_AD.jpg" alt="Movie 2">
                     <p>Kalki</p>
                 </div>
+
                 <div class="movie-item">
-                    <img src="/Image/Munjya_2024.jpg" alt="Movie 4">
-                    <p>Kalki</p>
+                    <img src="/Image/Munjya_2024.jpg" alt="Movie 2">
+                    <p>Munjya</p>
                 </div>
+
                 <div class="movie-item">
-                    <img src="/Image/Ismart_Shankar_poster.jpg" alt="Movie 5">
-                    <p>Kalki</p>
+                    <img src="/Image/Varisu_poster.jpg" alt="Movie 2">
+                    <p>Varisu</p>
                 </div>
+                
                 <div class="movie-item">
-                    <img src="/Image/Ala_Vaikunthapurramuloo.jpeg" alt="Movie 6">
-                    <p>Kalki</p>
+                    <img src="/Image/hatestory.jpeg" alt="Movie 2">
+                    <p>Hatestory</p>
                 </div>
+
                 <div class="movie-item">
-                    <img src="/Image/images.jpeg" alt="Movie 7">
-                    <p>Kalki</p>
+                    <img src="/Image/images.jpeg" alt="Movie 2">
+                    <p>Puspa 2</p>
                 </div>
-                <div class="movie-item">
-                    <img src="/Image/hatestory.jpeg" alt="Movie 8">
-                    <p>Kalki</p>
-                </div>
-                <div class="movie-item">
-                    <img src="/Image/Varisu_poster.jpg" alt="Movie 9">
-                    <p>Kalki</p>
-                </div>
+                <!-- Add more movie items as needed -->
             </div>
         </section>
     </main>
     
-    <!-- <main class="m1">
-        
-        <section id="movies">
-            <h2>Popular Movies</h2>
-            <div class="series-row">
-                <div class="series-item">
-                    <img src="./Jawan_film_poster.jpg" alt="Movie 1">
-                    <p>Jawan</p>
-                </div>
-                <div class="movie-item">
-                    <img src="./Jailer_2023_Tamil_film_poster.jpg" alt="Movie 2">
-                    <p>Jailer</p>
-                </div>
-                <div class="movie-item">
-                    <img src="./Kalki_2898_AD.jpg" alt="Movie 3">
-                    <p>Kalki</p>
-                </div>
-            </div>
-        </section>
-    </main> -->
     <footer>
         <p>&copy; 2024 SimpleFlix. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('show-menu');
+        }
+    </script>
 </body>
 </html>

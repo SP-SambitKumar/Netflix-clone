@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,27 +17,15 @@ nav {
     align-items: center;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-.nav-links {
+.nav-menu {
     display: flex;
     gap: 20px;
 }
 
-.nav-links a {
-    text-decoration: none;
+.nav-menu a {
     color: #fff;
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none;
 }
-
-.nav-links a:hover {
-    color: #e50914; /* Change the text color on hover */
-}
-
-
 
 .banner {
     background: url(/Image/bg.jpg) center center / cover no-repeat;
@@ -62,6 +51,10 @@ nav {
     padding: 20px;
 }
 
+p{
+    text-align: center;
+}
+
 .movie-row {
     display: flex;
     overflow-x: auto;
@@ -82,51 +75,55 @@ footer {
     text-align: center;
 }
 
-.categories, ul, li, a {
+.categories ul {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+.categories ul li a {
     text-decoration: none;
     color: #fff;
 }
 
-.series-row {
+/* Toggle Button for Mobile */
+.toggle-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Show menu class for mobile */
+.show-menu {
     display: flex;
-    overflow-x: auto;
+    flex-direction: column;
+    gap: 20px;
 }
 
 /* Responsive Styles */
-
-@media (max-width: 1024px) {
-    .banner h1 {
-        font-size: 40px;
-    }
-    
-    .banner {
-        padding: 80px 20px;
-    }
-
-    .banner button {
-        font-size: 16px;
-        padding: 8px 18px;
-    }
-
-    .movie-item img {
-        width: 120px;
-        height: 160px;
-    }
-}
-
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        text-align: center;
+    .nav-menu {
+        display: none;
     }
 
-    .nav-links {
+    .toggle-btn {
+        display: block;
+    }
+
+    .show-menu {
         display: flex;
+    }
+
+    .nav-menu.show-menu {
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background-color: #111;
         flex-direction: column;
-        align-items: center;
+        padding: 10px;
+        border-radius: 8px;
     }
 
     .banner h1 {
